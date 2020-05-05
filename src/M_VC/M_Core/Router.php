@@ -7,7 +7,6 @@
 namespace App\M_Core;
 
 class Router {
-
     private $params;
     private $action;
     private $controller;
@@ -20,7 +19,7 @@ class Router {
         $resourcesUrl   = array_splice($explodedUrl, 3);
 
         $this->controller   = "App\\Controller\\" . $resourcesUrl[0];
-        $this->action       = $resourcesUrl[1];
+        $this->action       = $resourcesUrl[1] ?? null;
         $this->params       = array_splice($resourcesUrl, 2);
     }
 
@@ -31,12 +30,17 @@ class Router {
 
     /**
      * This function routes to the requested controller and action
-     * @param string controller is the controller you want to route to
+     * @param string $controller is the controller you want to route to
+     * @param string $action is the funtion you wnat to hit with your request in the controller
      */
     private function route_to($controller, $action) {
-        $routeController = new $controller();
-        if ($action <> null) {
-            $routeController->{$action}($this->params);
-        } else $routeController->{"Index"}($this->params);
+        if (class_exists($controller)) {
+            $routeController = new $controller();
+            if ($action <> null) {
+                if (method_exists($routeController, $action)) {
+                    $routeController->{$action}($this->params);
+                } else $routeController->{"notFound"}();
+            } else $routeController->{"Index"}($this->params);
+        } else echo "Invalid URL";
     }
 }

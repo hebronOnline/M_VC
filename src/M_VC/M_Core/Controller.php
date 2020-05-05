@@ -44,11 +44,13 @@ abstract class Controller {
     }
     
     /**
-     * This function returns a json object from an array
-     * @param array $response is the array you want to return as a JSON object
+     * This function returns a json object from an array.
+     * @param array $response is the array you want to return as a JSON object.
+     * @param array $code is the status code of the response.
      */
 
-    protected function json_response($response) {
+    protected function json_response($response, $code = 200) {
+        header("HTTP/1.1 " . $code);
         echo json_encode($response);
     }
 }
