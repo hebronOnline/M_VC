@@ -9,7 +9,8 @@ namespace App\Model;
 
 use App\M_Core\Model;
 
-class UserModel extends Model {
+class UserModel extends Model
+{
 
     /**
      * This i s class demostrating how to use the Model to retrieve data from the database and return it to the view
@@ -17,7 +18,8 @@ class UserModel extends Model {
      * @param string $username a parameter to be passed from the controller
      */
 
-    public function getUser($username) {
+    public function getUser($username)
+    {
         $strSql = "SELECT * FROM user WHERE username = :username";
         $arrSql = [':username' => $username];
 

@@ -31,9 +31,13 @@ class ComposerStaticInite446292896c6e51e90f793f2118dc982
         'App\\M_Core\\Database' => __DIR__ . '/../..' . '/src/M_VC/M_Core/Database.php',
         'App\\M_Core\\Model' => __DIR__ . '/../..' . '/src/M_VC/M_Core/Model.php',
         'App\\M_Core\\Router' => __DIR__ . '/../..' . '/src/M_VC/M_Core/Router.php',
+        'App\\M_Core\\Session' => __DIR__ . '/../..' . '/src/M_VC/M_Core/Session.php',
         'App\\Model\\UserModel' => __DIR__ . '/../..' . '/src/App/Model/UserModel.php',
         'App\\Shared\\Layout\\MasterLayout' => __DIR__ . '/../..' . '/src/App/Shared/Master.php',
         'App\\Utils\\Http' => __DIR__ . '/../..' . '/src/M_VC/M_Utils/Http.php',
+        'App\\Utils\\Json' => __DIR__ . '/../..' . '/src/M_VC/M_Utils/Json.php',
+        'App\\Utils\\Math' => __DIR__ . '/../..' . '/src/M_VC/M_Utils/Math.php',
+        'App\\Utils\\Text' => __DIR__ . '/../..' . '/src/M_VC/M_Utils/Text.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

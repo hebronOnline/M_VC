@@ -12,7 +12,11 @@ return array(
     'App\\M_Core\\Database' => $baseDir . '/src/M_VC/M_Core/Database.php',
     'App\\M_Core\\Model' => $baseDir . '/src/M_VC/M_Core/Model.php',
     'App\\M_Core\\Router' => $baseDir . '/src/M_VC/M_Core/Router.php',
+    'App\\M_Core\\Session' => $baseDir . '/src/M_VC/M_Core/Session.php',
     'App\\Model\\UserModel' => $baseDir . '/src/App/Model/UserModel.php',
     'App\\Shared\\Layout\\MasterLayout' => $baseDir . '/src/App/Shared/Master.php',
     'App\\Utils\\Http' => $baseDir . '/src/M_VC/M_Utils/Http.php',
+    'App\\Utils\\Json' => $baseDir . '/src/M_VC/M_Utils/Json.php',
+    'App\\Utils\\Math' => $baseDir . '/src/M_VC/M_Utils/Math.php',
+    'App\\Utils\\Text' => $baseDir . '/src/M_VC/M_Utils/Text.php',
 );
