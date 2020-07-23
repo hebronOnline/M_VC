@@ -17,6 +17,7 @@ return array(
     'App\\Shared\\Layout\\MasterLayout' => $baseDir . '/src/App/Shared/Master.php',
     'App\\Utils\\Http' => $baseDir . '/src/M_VC/M_Utils/Http.php',
     'App\\Utils\\Json' => $baseDir . '/src/M_VC/M_Utils/Json.php',
+    'App\\Utils\\Mailer' => $baseDir . '/src/M_VC/M_Utils/Mailer.php',
     'App\\Utils\\Math' => $baseDir . '/src/M_VC/M_Utils/Math.php',
     'App\\Utils\\Text' => $baseDir . '/src/M_VC/M_Utils/Text.php',
 );

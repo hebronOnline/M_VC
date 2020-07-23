@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInite446292896c6e51e90f793f2118dc982
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -14,6 +18,10 @@ class ComposerStaticInite446292896c6e51e90f793f2118dc982
     );
 
     public static $prefixDirsPsr4 = array (
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
@@ -36,6 +44,7 @@ class ComposerStaticInite446292896c6e51e90f793f2118dc982
         'App\\Shared\\Layout\\MasterLayout' => __DIR__ . '/../..' . '/src/App/Shared/Master.php',
         'App\\Utils\\Http' => __DIR__ . '/../..' . '/src/M_VC/M_Utils/Http.php',
         'App\\Utils\\Json' => __DIR__ . '/../..' . '/src/M_VC/M_Utils/Json.php',
+        'App\\Utils\\Mailer' => __DIR__ . '/../..' . '/src/M_VC/M_Utils/Mailer.php',
         'App\\Utils\\Math' => __DIR__ . '/../..' . '/src/M_VC/M_Utils/Math.php',
         'App\\Utils\\Text' => __DIR__ . '/../..' . '/src/M_VC/M_Utils/Text.php',
     );

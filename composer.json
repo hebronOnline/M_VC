@@ -10,5 +10,8 @@
         "psr-0": {
             "": "src/"
         }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.1"
     }
 }
